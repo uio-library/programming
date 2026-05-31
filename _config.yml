@@ -12,6 +12,9 @@ description: >-
 # Execution settings
 execute:
   execute_notebooks           : auto
+  allow_errors                : true  # If `False`, when a code cell raises an error the execution is stopped, otherwise all cells are always run.
+  exclude_patterns:
+    - 'machine_learning*'
 
 #######################################################################################
 # HTML-specific settings
